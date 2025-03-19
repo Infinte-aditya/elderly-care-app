@@ -2,6 +2,7 @@
   "expo": {
     "name": "elderly-care-app",
     "slug": "elderly-care-app",
+    "main": "node_modules/expo/AppEntry.js",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +16,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.soulclad.elderlycareapp"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +34,19 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "842dc0d8-c5bb-47df-baff-95fc961422ae"
+      }
     }
   }
 }
