@@ -31,8 +31,18 @@ export default function AppNavigator() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Main"
-          component={MainTabNavigator}
+          name="Home"
+          component={HomeScreen}
+          options={{ headerShown: false }}
+        />
+                <Stack.Screen
+          name="Profile"
+          component={ProfileScreen}
+          options={{ headerShown: false }}
+        />
+                <Stack.Screen
+          name="Medications"
+          component={MedicationScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
